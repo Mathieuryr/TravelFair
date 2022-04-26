@@ -1,0 +1,336 @@
+/*************************************************************************************************************************/
+/*                                            MARGES & ALIGNEMENTS                                                       */
+/*************************************************************************************************************************/
+
+/* Marges extérieures globales */
+
+.marg-1
+{
+	margin: 1%;
+}
+.marg-2
+{
+	margin: 2%;
+}
+.marg-3
+{
+	margin: 3%;
+}
+.marg-5
+{
+	margin: 5%;
+}
+.marg-8
+{
+	margin: 8%;
+}
+.marg-10
+{
+	margin: 10%;
+}
+.marg-12
+{
+	margin: 13%;
+}
+.marg-20
+{
+	padding: 20%;
+}
+
+/* Marges intérieures globales */
+
+.pad-1
+{
+	padding: 1%;
+}
+.pad-2
+{
+	padding: 2%;
+}
+.pad-3
+{
+	padding: 3%;
+}
+.pad-5
+{
+	padding: 5%;
+}
+.pad-8
+{
+	padding: 8%;
+}
+.pad-10
+{
+	padding: 10%;
+}
+.pad-12
+{
+	padding: 13%;
+}
+.pad-20
+{
+	padding: 20%;
+}
+
+/* Marges extérieures sur l'axe X (horizontal) */
+
+.marg-x-1
+{
+	margin: 0 1% 0 1%;
+}
+.marg-x-2
+{
+	margin: 0 2% 0 2%;
+}
+.marg-x-3
+{
+	margin: 0 1% 0 1%;
+}
+.marg-x-5
+{
+	margin: 0 2% 0 2%;
+}
+.marg-x-8
+{
+	margin: 0 1% 0 1%;
+}
+.marg-x-10
+{
+	margin: 0 2% 0 2%;
+}
+
+/* Marges extérieures sur l'axe Y (vertical) */
+
+.marg-y-1
+{
+	margin: 1% 0 1% 0;
+}
+.marg-y-2
+{
+	margin: 2% 0 2% 0;
+}
+.marg-y-3
+{
+	margin: 3% 0 3% 0;
+}
+.marg-y-5
+{
+	margin: 5% 0 5% 0;
+}
+.marg-y-8
+{
+	margin: 8% 0 8% 0;
+}
+.marg-y-10
+{
+	margin: 10% 0 10% 0;
+}
+
+/* Marges intérieures sur l'axe X */
+
+.pad-x-1
+{
+	padding: 1% 0 1% 0;
+}
+.pad-x-2
+{
+	padding: 2% 0 2% 0;
+}
+.pad-x-3
+{
+	padding: 3% 0 3% 0;
+}
+.pad-x-5
+{
+	padding: 5% 0 5% 0;
+}
+.pad-x-8
+{
+	padding: 8% 0 8% 0;
+}
+.pad-x-10
+{
+	padding: 10% 0 10% 0;
+}
+
+/* Marges intérieures sur l'axe X */
+
+.pad-y-1
+{
+	padding: 1% 0 1% 0;
+}
+.pad-y-2
+{
+	padding: 2% 0 2% 0;
+}
+.pad-y-3
+{
+	padding: 3% 0 3% 0;
+}
+.pad-y-5
+{
+	padding: 5% 0 5% 0;
+}
+.pad-y-8
+{
+	padding: 8% 0 8% 0;
+}
+.pad-y-10
+{
+	padding: 10% 0 10% 0;
+}
+.center-elt
+{
+	text-align: center;
+}
+
+
+/*************************************************************************************************************************/
+/*                                         ANIMATIONS AU SURVOL DE LA SOURIS                                             */
+/*************************************************************************************************************************/
+
+/* Effet de zoom */
+.zoom
+{
+	transition-duration: 0.7s;
+}
+.zoom:hover
+{
+	transform: scale(1.1);
+}
+/* Déplacement sur l'axe X ou Y */
+.tr-up
+{
+	transition-duration: 0.7s;
+}
+.tr-up:hover
+{
+	transform: translateY(-6px);
+}
+.tr-dwn
+{
+	transition-duration: 0.7s;
+}
+.tr-dwn:hover
+{
+	transform: translateY(6px);
+}
+.tr-l
+{
+	transition-duration: 0.7s;
+}
+.tr-l:hover
+{
+	transform: translateX(-6px);
+}
+.tr-r
+{
+	transition-duration: 0.7s;
+}
+.tr-r:hover
+{
+	transform: translateX(6px);
+}
+.shadow-hover
+{
+	transition-duration: 0.7s;
+}
+.shadow-hover:hover
+{
+	box-shadow: 6px 6px 8px lightgray;
+}
+.bg-black
+{
+	background-color: rgb(0, 0, 0);
+	color: white;
+}
+.bg-black:hover
+{
+	background-color: rgb(0, 0, 0);
+	color: white;
+}
+
+.bg-orange
+{
+	background: darkorange;
+}
+
+.white
+{
+	color: white;
+}
+
+/*************************************************************************************************************************/
+/*                                                   FLEXBOX                                                             */
+/*************************************************************************************************************************/
+
+
+/* PROPRIÉTÉ FONDAMENTALE FORCANT LES BALISES BLOCKS À RESTER SUR UNE MÊME LIGNE */
+.flex
+{
+	display: flex;
+}
+
+/* Indiquer si l'axe primaire est horizontal ou vertical */
+.flex-row
+{
+	flex-direction: row; /* Les blocs sont disposés sur une même ligne ( état par défaut avec la propriété display: flex; ) */
+}
+.flex-row-reverse
+{
+	flex-direction: row-reverse; /* Les blocs sont disposés sur une même ligne mais inversés */
+}
+.flex-col
+{
+	flex-direction: column; /* Les blocs sont disposés les uns en dessous des autres ( état par défaut des balises block ) */
+}
+.flex-col-reverse
+{
+	flex-direction: column-reverse; /* Les blocs sont disposés les uns en dessous des autres mais inversés */
+}
+
+
+/* Espacer de différentes manières les différents blocs sur la ligne ( center, start, end, space-between, space-around ) */
+.flex-start
+{
+	justify-content: flex-start;
+}
+.flex-center
+{
+	justify-content: center;
+}
+.space-between
+{
+	justify-content: space-between;
+}
+.space-around
+{
+	justify-content: space-around;
+}
+.flex-end
+{
+	justify-content: flex-end;
+}
+
+/* Forcer ou non le retour à la ligne des blocs excédentaires. */
+
+.wrap
+{
+	flex-wrap: wrap; /* Les blocs excédentaires passent à la ligne suivante */
+}
+.wrap-reverse
+{
+	flex-wrap: wrap-reverse; /* On force tous les blocs à rester sur un même ligne (valeur par défaut) */
+}
+.nowrap
+{
+	flex-wrap: nowrap; /* Les blocs excédentaires passent à la ligne suivante mais en étant inversés. */
+
+}
+
+/* Positionner les blocs par rapport à l'axe secondaire ( décalé à droite ou à gauche si l'axe principal est vertical ) */
+
+
+
+
+/* 🧐 🧐 🧐 🧐 🧐 */
